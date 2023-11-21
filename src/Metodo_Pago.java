@@ -89,7 +89,7 @@ public class Metodo_Pago extends javax.swing.JFrame {
 
     private void Debit_CardActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Debit_CardActionPerformed
         setVisible(false);
-        Debit_Card ob= new Debit_Card();
+        Debito ob= new Debito();
         ob.setVisible(true);
         
     }//GEN-LAST:event_Debit_CardActionPerformed
