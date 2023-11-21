@@ -198,7 +198,7 @@ public class Login extends javax.swing.JFrame {
 
     private void ForgotActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ForgotActionPerformed
         setVisible(false);
-        Forgot ob=new Forgot();
+        Olvido_Contraseña ob=new Olvido_Contraseña();
         ob.setVisible(true);
     }//GEN-LAST:event_ForgotActionPerformed
 

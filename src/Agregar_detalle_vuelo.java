@@ -12,12 +12,12 @@ import javax.swing.JFrame;
 import javax.swing.table.DefaultTableModel;
 import net.proteanit.sql.DbUtils;
 
-public class Agregar_detalle_vuelo extends javax.swing.JFrame {
+public class Agregar_Detalle_Vuelo extends javax.swing.JFrame {
     Connection conn;
     ResultSet rs;
     PreparedStatement pst;
 
-    public Agregar_detalle_vuelo() {
+    public Agregar_Detalle_Vuelo() {
         initComponents();
         conn=javaconnect.ConnectDb();
         Random();
@@ -505,21 +505,23 @@ public class Agregar_detalle_vuelo extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Agregar_detalle_vuelo.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Agregar_Detalle_Vuelo.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Agregar_detalle_vuelo.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Agregar_Detalle_Vuelo.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Agregar_detalle_vuelo.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Agregar_Detalle_Vuelo.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Agregar_detalle_vuelo.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Agregar_Detalle_Vuelo.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
+        //</editor-fold>
         //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Agregar_detalle_vuelo().setVisible(true);
+                new Agregar_Detalle_Vuelo().setVisible(true);
             }
         });
     }

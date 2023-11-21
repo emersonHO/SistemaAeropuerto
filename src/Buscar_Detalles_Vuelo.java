@@ -10,12 +10,12 @@ import javax.swing.table.DefaultTableModel;
 import java.util.Random;
 import javax.swing.JFrame;
 
-public class Search_Flight_Details extends javax.swing.JFrame {
+public class Buscar_Detalles_Vuelo extends javax.swing.JFrame {
     Connection conn;
     ResultSet rs;
     PreparedStatement pst;
 
-    public Search_Flight_Details() {
+    public Buscar_Detalles_Vuelo() {
         initComponents();
         conn=javaconnect.ConnectDb();
         Random();
@@ -73,10 +73,10 @@ public class Search_Flight_Details extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        jLabel1.setText("Search Flight Details");
+        jLabel1.setText("Buscar detalles de vuelo");
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel2.setText("Source:");
+        jLabel2.setText("Salida:");
 
         txtsource.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -85,7 +85,7 @@ public class Search_Flight_Details extends javax.swing.JFrame {
         });
 
         jLabel3.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel3.setText("Destination:");
+        jLabel3.setText("Destino:");
 
         txtdestination.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -94,7 +94,7 @@ public class Search_Flight_Details extends javax.swing.JFrame {
         });
 
         search_flight.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        search_flight.setText("Search");
+        search_flight.setText("Buscar");
         search_flight.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 search_flightActionPerformed(evt);
@@ -107,7 +107,7 @@ public class Search_Flight_Details extends javax.swing.JFrame {
 
             },
             new String [] {
-                "Flight_Id", "Flight_Name", "Source", "Destination", "Date", "Arrival_Time", "Departure_Time", "Flight_Price"
+                "Flight_Id", "Nombre de vuelo", "Salida", "Destino", "Fecha", "Hora de llegada", "Hora de salida", "Precio de vuelo"
             }
         ));
         jTable.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -118,40 +118,40 @@ public class Search_Flight_Details extends javax.swing.JFrame {
         jScrollPane1.setViewportView(jTable);
 
         jLabel4.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel4.setText("Date:");
+        jLabel4.setText("Fecha:");
 
         jLabel5.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel5.setText("Flight Id:");
+        jLabel5.setText("ID de vuelo:");
 
         jLabel6.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel6.setText("Flight Name:");
+        jLabel6.setText("Nombre de vuelo:");
 
         jLabel7.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel7.setText("Source:");
+        jLabel7.setText("Salida:");
 
         jLabel8.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel8.setText("Destination:");
+        jLabel8.setText("Destino:");
 
         jLabel9.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel9.setText("Date:");
+        jLabel9.setText("Fecha:");
 
         jLabel10.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel10.setText("Arrival Time:");
+        jLabel10.setText("Hora de llegada:");
 
         jLabel11.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel11.setText("Departure Time:");
+        jLabel11.setText("Hora de salida:");
 
         jLabel12.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel12.setText("Price:");
+        jLabel12.setText("Precio:");
 
         jLabel13.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel13.setText("Customer Name:");
+        jLabel13.setText("Nombre de cliente:");
 
         jLabel14.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel14.setText("Ticket No:");
+        jLabel14.setText("No. de ticket:");
 
         jLabel15.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel15.setText("Seats:");
+        jLabel15.setText("Asientos:");
 
         seats.addChangeListener(new javax.swing.event.ChangeListener() {
             public void stateChanged(javax.swing.event.ChangeEvent evt) {
@@ -176,13 +176,13 @@ public class Search_Flight_Details extends javax.swing.JFrame {
         });
 
         jLabel16.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel16.setText("Total Price:");
+        jLabel16.setText("Total:");
 
         jLabel17.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        jLabel17.setText("Ticket Booking Form");
+        jLabel17.setText("Formulario de reserva");
 
         Exit.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        Exit.setText("Exit");
+        Exit.setText("Salir");
         Exit.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 ExitActionPerformed(evt);
@@ -196,7 +196,7 @@ public class Search_Flight_Details extends javax.swing.JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(layout.createSequentialGroup()
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addContainerGap(14, Short.MAX_VALUE)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(jLabel2)
@@ -247,7 +247,7 @@ public class Search_Flight_Details extends javax.swing.JFrame {
                                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                             .addComponent(Date1, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE))
                                         .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                            .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(jLabel10)
                                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                             .addComponent(atime, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)))))
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
@@ -259,13 +259,13 @@ public class Search_Flight_Details extends javax.swing.JFrame {
                                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                         .addComponent(jLabel15, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addGroup(layout.createSequentialGroup()
-                                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                                .addComponent(jLabel11)
+                                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                                 .addGroup(layout.createSequentialGroup()
                                                     .addComponent(jLabel12)
-                                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                                    .addComponent(fprice, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                                            .addGap(57, 57, 57)
+                                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                    .addComponent(fprice, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                                .addComponent(jLabel11))
+                                            .addGap(51, 51, 51)
                                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                                 .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                                                     .addComponent(jLabel16)
@@ -326,9 +326,9 @@ public class Search_Flight_Details extends javax.swing.JFrame {
                             .addComponent(atime, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel10, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(dtime, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel11, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(fprice, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -434,7 +434,7 @@ public class Search_Flight_Details extends javax.swing.JFrame {
             dtime.setText(Df.getValueAt(selectIndex,6).toString());
             fprice.setText(Df.getValueAt(selectIndex,7).toString());  
         } catch (ParseException ex) {
-            Logger.getLogger(Search_Flight_Details.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(Buscar_Detalles_Vuelo.class.getName()).log(Level.SEVERE, null, ex);
         } 
         
     }//GEN-LAST:event_jTableMouseClicked
@@ -448,7 +448,7 @@ public class Search_Flight_Details extends javax.swing.JFrame {
 
     private void bticketActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bticketActionPerformed
         setVisible(false);
-        Payment_Option ob=new Payment_Option();
+        Metodo_Pago ob=new Metodo_Pago();
         ob.setVisible(true);
         DateFormat da=new SimpleDateFormat("yyyy-MM-dd");
         String date=da.format(Date1.getDate());
@@ -506,20 +506,21 @@ public class Search_Flight_Details extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Search_Flight_Details.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Buscar_Detalles_Vuelo.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Search_Flight_Details.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Buscar_Detalles_Vuelo.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Search_Flight_Details.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Buscar_Detalles_Vuelo.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Search_Flight_Details.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Buscar_Detalles_Vuelo.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Search_Flight_Details().setVisible(true);
+                new Buscar_Detalles_Vuelo().setVisible(true);
             }
         });
     }

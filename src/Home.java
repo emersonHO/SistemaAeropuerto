@@ -166,13 +166,13 @@ public class Home extends javax.swing.JFrame {
 
     private void Add_FlightActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Add_FlightActionPerformed
         setVisible(false);
-        Agregar_detalle_vuelo ob=new Agregar_detalle_vuelo();
+        Agregar_Detalle_Vuelo ob=new Agregar_Detalle_Vuelo();
         ob.setVisible(true);
     }//GEN-LAST:event_Add_FlightActionPerformed
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
         setVisible(false);
-        Search_Flight_Details ob=new Search_Flight_Details();
+        Buscar_Detalles_Vuelo ob=new Buscar_Detalles_Vuelo();
         ob.setVisible(true);
     }//GEN-LAST:event_jButton5ActionPerformed
 
@@ -190,7 +190,7 @@ public class Home extends javax.swing.JFrame {
 
     private void search_flightActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_search_flightActionPerformed
         setVisible(false);
-        Search_Flight_Details ob=new Search_Flight_Details();
+        Buscar_Detalles_Vuelo ob=new Buscar_Detalles_Vuelo();
         ob.setVisible(true);
     }//GEN-LAST:event_search_flightActionPerformed
 
