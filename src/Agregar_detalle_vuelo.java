@@ -84,7 +84,7 @@ public class Agregar_Detalle_Vuelo extends javax.swing.JFrame {
         jPanel2 = new javax.swing.JPanel();
         Add_Flight = new javax.swing.JButton();
         Delete = new javax.swing.JButton();
-        Update = new javax.swing.JButton();
+        Ordenar = new javax.swing.JButton();
         Search = new javax.swing.JButton();
         home = new javax.swing.JButton();
         Exit = new javax.swing.JButton();
@@ -168,11 +168,11 @@ public class Agregar_Detalle_Vuelo extends javax.swing.JFrame {
             }
         });
 
-        Update.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        Update.setText("Actualizar");
-        Update.addActionListener(new java.awt.event.ActionListener() {
+        Ordenar.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        Ordenar.setText("Ordenar");
+        Ordenar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                UpdateActionPerformed(evt);
+                OrdenarActionPerformed(evt);
             }
         });
 
@@ -210,7 +210,7 @@ public class Agregar_Detalle_Vuelo extends javax.swing.JFrame {
                 .addGap(49, 49, 49)
                 .addComponent(Delete)
                 .addGap(47, 47, 47)
-                .addComponent(Update)
+                .addComponent(Ordenar)
                 .addGap(51, 51, 51)
                 .addComponent(Search, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(51, 51, 51)
@@ -222,7 +222,7 @@ public class Agregar_Detalle_Vuelo extends javax.swing.JFrame {
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                .addComponent(Update)
+                .addComponent(Ordenar)
                 .addComponent(Delete)
                 .addComponent(Add_Flight)
                 .addComponent(Search)
@@ -343,7 +343,6 @@ public class Agregar_Detalle_Vuelo extends javax.swing.JFrame {
             pst.setString(8, fprice.getText());
             
             
-            
             pst.execute();
             fetch();
             
@@ -406,7 +405,7 @@ public class Agregar_Detalle_Vuelo extends javax.swing.JFrame {
         
     }//GEN-LAST:event_DeleteActionPerformed
 
-    private void UpdateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_UpdateActionPerformed
+    private void OrdenarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_OrdenarActionPerformed
         // TODO add your handling code here:
         DateFormat da=new SimpleDateFormat("yyy-MM-dd");
         String date=da.format(Date.getDate());
@@ -430,10 +429,10 @@ public class Agregar_Detalle_Vuelo extends javax.swing.JFrame {
         catch(Exception e){
             JOptionPane.showMessageDialog(null,e);
         }
-    }//GEN-LAST:event_UpdateActionPerformed
+    }//GEN-LAST:event_OrdenarActionPerformed
 
     private void SearchActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SearchActionPerformed
-        // TODO add your handling code here:
+        
         String sql="select * from flight where Flight_Id=?";
         try{
              pst=conn.prepareStatement(sql);
@@ -531,8 +530,8 @@ public class Agregar_Detalle_Vuelo extends javax.swing.JFrame {
     private com.toedter.calendar.JDateChooser Date;
     private javax.swing.JButton Delete;
     private javax.swing.JButton Exit;
+    private javax.swing.JButton Ordenar;
     private javax.swing.JButton Search;
-    private javax.swing.JButton Update;
     private javax.swing.JTextField atime;
     private javax.swing.JTextField dest;
     private javax.swing.JTextField dtime;

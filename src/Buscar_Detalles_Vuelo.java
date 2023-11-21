@@ -168,7 +168,7 @@ public class Buscar_Detalles_Vuelo extends javax.swing.JFrame {
         });
 
         bticket.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        bticket.setText("Book Ticket");
+        bticket.setText("Pagar");
         bticket.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 bticketActionPerformed(evt);

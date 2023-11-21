@@ -52,7 +52,7 @@ public class Debit_Card extends javax.swing.JFrame {
         jLabel9.setText("CVV:");
 
         book_Ticket.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        book_Ticket.setText("Book Ticket");
+        book_Ticket.setText("Pagar");
         book_Ticket.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 book_TicketActionPerformed(evt);
@@ -84,7 +84,7 @@ public class Debit_Card extends javax.swing.JFrame {
                                 .addGap(38, 38, 38)
                                 .addComponent(atime, javax.swing.GroupLayout.PREFERRED_SIZE, 202, javax.swing.GroupLayout.PREFERRED_SIZE))))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(173, 173, 173)
+                        .addGap(178, 178, 178)
                         .addComponent(book_Ticket)))
                 .addContainerGap(385, Short.MAX_VALUE))
         );
@@ -105,9 +105,9 @@ public class Debit_Card extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(atime2, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(27, 27, 27)
+                .addGap(28, 28, 28)
                 .addComponent(book_Ticket, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(229, Short.MAX_VALUE))
+                .addContainerGap(222, Short.MAX_VALUE))
         );
 
         pack();
