@@ -28,7 +28,7 @@ public class Home extends javax.swing.JFrame {
         jPanel1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
-        jLabel1.setText("Welcome to Airline ticket booking system");
+        jLabel1.setText("Bienvenido al sistema de reserva de vuelos");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -47,7 +47,7 @@ public class Home extends javax.swing.JFrame {
         jPanel2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
         Add_Flight.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        Add_Flight.setText("Add Flight");
+        Add_Flight.setText("Añadir vuelo");
         Add_Flight.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 Add_FlightActionPerformed(evt);
@@ -55,7 +55,7 @@ public class Home extends javax.swing.JFrame {
         });
 
         back_to_login.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        back_to_login.setText("Back to login page");
+        back_to_login.setText("Volver al login");
         back_to_login.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 back_to_loginActionPerformed(evt);
@@ -63,7 +63,7 @@ public class Home extends javax.swing.JFrame {
         });
 
         jButton5.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jButton5.setText("Book Ticket");
+        jButton5.setText("Reservar ticket");
         jButton5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton5ActionPerformed(evt);
@@ -71,7 +71,7 @@ public class Home extends javax.swing.JFrame {
         });
 
         search_flight.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        search_flight.setText("Search Flight Details");
+        search_flight.setText("Buscar detalles de vuelo");
         search_flight.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 search_flightActionPerformed(evt);
@@ -79,7 +79,7 @@ public class Home extends javax.swing.JFrame {
         });
 
         Ticket_Cancel.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        Ticket_Cancel.setText("Ticket Cancel");
+        Ticket_Cancel.setText("Cancelar pasaje");
         Ticket_Cancel.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 Ticket_CancelActionPerformed(evt);
@@ -87,7 +87,7 @@ public class Home extends javax.swing.JFrame {
         });
 
         exit.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        exit.setText("Exit");
+        exit.setText("Salir");
         exit.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 exitActionPerformed(evt);
@@ -147,7 +147,7 @@ public class Home extends javax.swing.JFrame {
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel2))))
-                .addContainerGap(100, Short.MAX_VALUE))
+                .addContainerGap(131, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -166,7 +166,7 @@ public class Home extends javax.swing.JFrame {
 
     private void Add_FlightActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Add_FlightActionPerformed
         setVisible(false);
-        Add_Flight_Details ob=new Add_Flight_Details();
+        Agregar_detalle_vuelo ob=new Agregar_detalle_vuelo();
         ob.setVisible(true);
     }//GEN-LAST:event_Add_FlightActionPerformed
 
@@ -178,7 +178,7 @@ public class Home extends javax.swing.JFrame {
 
     private void Ticket_CancelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Ticket_CancelActionPerformed
         setVisible(false);
-        Cancel_Flight_Ticket ob=new Cancel_Flight_Ticket();
+        Cancelar_Pasaje ob=new Cancelar_Pasaje();
         ob.setVisible(true);
     }//GEN-LAST:event_Ticket_CancelActionPerformed
 

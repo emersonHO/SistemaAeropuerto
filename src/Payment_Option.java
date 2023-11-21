@@ -84,7 +84,7 @@ public class Payment_Option extends javax.swing.JFrame {
 
     private void Credit_CardActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Credit_CardActionPerformed
         setVisible(false);
-        Credit_Card ob=new Credit_Card();
+        Credito ob=new Credito();
         ob.setVisible(true);
     }//GEN-LAST:event_Credit_CardActionPerformed
 

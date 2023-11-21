@@ -27,43 +27,37 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="1" attributes="0">
-                          <Group type="103" alignment="1" groupAlignment="0" max="-2" attributes="0">
-                              <Group type="103" alignment="0" groupAlignment="0" attributes="0">
-                                  <Component id="fid" alignment="0" min="-2" pref="200" max="-2" attributes="0"/>
-                                  <Component id="fname" alignment="1" min="-2" pref="200" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                          <Group type="102" alignment="1" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="jLabel5" min="-2" pref="109" max="-2" attributes="0"/>
+                                  <Component id="jLabel7" alignment="0" min="-2" pref="109" max="-2" attributes="0"/>
+                                  <Component id="jLabel8" alignment="0" min="-2" pref="109" max="-2" attributes="0"/>
                               </Group>
-                              <Group type="103" alignment="1" groupAlignment="0" attributes="0">
-                                  <Component id="source" alignment="0" min="-2" pref="200" max="-2" attributes="0"/>
-                                  <Component id="dest" alignment="1" min="-2" pref="200" max="-2" attributes="0"/>
+                              <EmptySpace max="32767" attributes="0"/>
+                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                  <Group type="103" alignment="0" groupAlignment="0" attributes="0">
+                                      <Component id="fid" alignment="0" min="-2" pref="200" max="-2" attributes="0"/>
+                                      <Component id="fname" alignment="1" min="-2" pref="200" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="103" alignment="1" groupAlignment="0" attributes="0">
+                                      <Component id="source" alignment="0" min="-2" pref="200" max="-2" attributes="0"/>
+                                      <Component id="dest" alignment="1" min="-2" pref="200" max="-2" attributes="0"/>
+                                  </Group>
                               </Group>
                           </Group>
-                          <Group type="103" alignment="1" groupAlignment="0" max="-2" attributes="0">
-                              <Group type="103" alignment="0" groupAlignment="0" attributes="0">
-                                  <Component id="tno" alignment="1" min="-2" pref="200" max="-2" attributes="0"/>
-                                  <Group type="102" alignment="1" attributes="0">
-                                      <Component id="jLabel14" min="-2" pref="109" max="-2" attributes="0"/>
-                                      <EmptySpace min="-2" pref="257" max="-2" attributes="0"/>
-                                  </Group>
+                          <Group type="103" alignment="0" groupAlignment="0" attributes="0">
+                              <Component id="tno" alignment="1" min="-2" pref="200" max="-2" attributes="0"/>
+                              <Group type="102" alignment="1" attributes="0">
+                                  <Component id="jLabel14" min="-2" pref="109" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="257" max="-2" attributes="0"/>
                               </Group>
-                              <Group type="103" alignment="0" groupAlignment="0" attributes="0">
-                                  <Group type="102" alignment="1" attributes="0">
-                                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                          <Component id="jLabel7" alignment="0" max="32767" attributes="0"/>
-                                          <Component id="jLabel8" alignment="0" min="-2" pref="109" max="-2" attributes="0"/>
-                                      </Group>
-                                      <EmptySpace min="-2" pref="249" max="-2" attributes="0"/>
-                                  </Group>
-                                  <Group type="103" alignment="0" groupAlignment="0" max="-2" attributes="0">
-                                      <Component id="jLabel6" alignment="1" max="32767" attributes="0"/>
-                                      <Component id="jLabel5" alignment="1" min="-2" pref="109" max="-2" attributes="0"/>
-                                  </Group>
-                              </Group>
-                              <Group type="102" alignment="0" attributes="0">
-                                  <Component id="jLabel9" min="-2" pref="109" max="-2" attributes="0"/>
-                                  <EmptySpace max="32767" attributes="0"/>
-                                  <Component id="cdate" min="-2" pref="200" max="-2" attributes="0"/>
-                              </Group>
+                          </Group>
+                          <Component id="jLabel6" alignment="0" max="32767" attributes="0"/>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="jLabel9" min="-2" pref="109" max="-2" attributes="0"/>
+                              <EmptySpace max="32767" attributes="0"/>
+                              <Component id="cdate" min="-2" pref="200" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
@@ -76,7 +70,7 @@
                                       <Component id="jLabel16" max="32767" attributes="0"/>
                                       <Component id="jLabel13" max="32767" attributes="0"/>
                                       <Component id="jLabel15" alignment="0" max="32767" attributes="0"/>
-                                      <Component id="jLabel12" pref="124" max="32767" attributes="0"/>
+                                      <Component id="jLabel12" max="32767" attributes="0"/>
                                       <Component id="jLabel11" alignment="0" max="32767" attributes="0"/>
                                   </Group>
                                   <Component id="jLabel10" min="-2" pref="124" max="-2" attributes="0"/>
@@ -107,7 +101,7 @@
                       <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
                   </Group>
               </Group>
-              <EmptySpace pref="204" max="32767" attributes="0"/>
+              <EmptySpace pref="180" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -125,9 +119,9 @@
                           <Component id="tno" alignment="0" pref="34" max="32767" attributes="0"/>
                       </Group>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                          <Component id="jLabel5" alignment="0" max="32767" attributes="0"/>
-                          <Component id="fid" alignment="0" min="-2" pref="34" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="fid" alignment="3" min="-2" pref="34" max="-2" attributes="0"/>
+                          <Component id="jLabel5" alignment="3" max="32767" attributes="0"/>
                       </Group>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" max="-2" attributes="0">
@@ -135,14 +129,14 @@
                           <Component id="fname" alignment="0" min="-2" pref="34" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                          <Component id="jLabel7" alignment="0" max="32767" attributes="0"/>
-                          <Component id="source" alignment="0" min="-2" pref="34" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="source" alignment="3" min="-2" pref="34" max="-2" attributes="0"/>
+                          <Component id="jLabel7" alignment="3" max="32767" attributes="0"/>
                       </Group>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                          <Component id="jLabel8" alignment="0" max="32767" attributes="0"/>
-                          <Component id="dest" alignment="0" min="-2" pref="34" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="dest" alignment="3" min="-2" pref="34" max="-2" attributes="0"/>
+                          <Component id="jLabel8" alignment="3" max="32767" attributes="0"/>
                       </Group>
                       <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
@@ -197,7 +191,7 @@
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Tahoma" size="14" style="1"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="Ticket No:"/>
+        <Property name="text" type="java.lang.String" value="No. de ticket"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JTextField" name="tno">
@@ -207,7 +201,7 @@
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Tahoma" size="14" style="1"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="Flight Id:"/>
+        <Property name="text" type="java.lang.String" value="ID de vuelo:"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JTextField" name="fid">
@@ -217,7 +211,7 @@
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Tahoma" size="14" style="1"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="Flight Name:"/>
+        <Property name="text" type="java.lang.String" value="Nombre de vuelo:"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JTextField" name="fname">
@@ -227,7 +221,7 @@
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Tahoma" size="14" style="1"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="Source:"/>
+        <Property name="text" type="java.lang.String" value="Salida:"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel8">
@@ -235,7 +229,7 @@
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Tahoma" size="14" style="1"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="Destination:"/>
+        <Property name="text" type="java.lang.String" value="Destino:"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JTextField" name="source">
@@ -255,7 +249,7 @@
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Tahoma" size="14" style="1"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="Search"/>
+        <Property name="text" type="java.lang.String" value="Buscar"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="searchActionPerformed"/>
@@ -266,7 +260,7 @@
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Tahoma" size="14" style="1"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="Customer Name:"/>
+        <Property name="text" type="java.lang.String" value="Nombre de cliente"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JTextField" name="seat">
@@ -276,7 +270,7 @@
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Tahoma" size="14" style="1"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="Cancel date:"/>
+        <Property name="text" type="java.lang.String" value="Fecha de cancelaci&#xf3;n:"/>
       </Properties>
     </Component>
     <Component class="com.toedter.calendar.JDateChooser" name="cdate1">
@@ -286,7 +280,7 @@
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Tahoma" size="14" style="1"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="Arrival Time:"/>
+        <Property name="text" type="java.lang.String" value="Hora de llegada:"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JTextField" name="arrival">
@@ -296,7 +290,7 @@
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Tahoma" size="14" style="1"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="Departure Time:"/>
+        <Property name="text" type="java.lang.String" value="Hora de salida:"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JTextField" name="dept">
@@ -306,7 +300,7 @@
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Tahoma" size="14" style="1"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="Price:"/>
+        <Property name="text" type="java.lang.String" value="Precio:"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JTextField" name="price">
@@ -316,7 +310,7 @@
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Tahoma" size="14" style="1"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="Seats:"/>
+        <Property name="text" type="java.lang.String" value="Asientos"/>
       </Properties>
     </Component>
     <Component class="java.awt.TextArea" name="cname">
@@ -335,7 +329,7 @@
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
                   <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace min="0" pref="19" max="32767" attributes="0"/>
+                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -351,7 +345,7 @@
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Tahoma" size="18" style="1"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Cancel Flight Ticket"/>
+            <Property name="text" type="java.lang.String" value="Cancelar pasaje de vuelo"/>
           </Properties>
         </Component>
       </SubComponents>
@@ -394,7 +388,7 @@
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Tahoma" size="14" style="1"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Ticket Cancel"/>
+            <Property name="text" type="java.lang.String" value="Cancelar"/>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cancelActionPerformed"/>
@@ -416,7 +410,7 @@
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Tahoma" size="14" style="1"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Exit"/>
+            <Property name="text" type="java.lang.String" value="Salir"/>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ExitActionPerformed"/>

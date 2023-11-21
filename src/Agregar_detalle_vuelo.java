@@ -12,12 +12,12 @@ import javax.swing.JFrame;
 import javax.swing.table.DefaultTableModel;
 import net.proteanit.sql.DbUtils;
 
-public class Add_Flight_Details extends javax.swing.JFrame {
+public class Agregar_detalle_vuelo extends javax.swing.JFrame {
     Connection conn;
     ResultSet rs;
     PreparedStatement pst;
 
-    public Add_Flight_Details() {
+    public Agregar_detalle_vuelo() {
         initComponents();
         conn=javaconnect.ConnectDb();
         Random();
@@ -92,16 +92,16 @@ public class Add_Flight_Details extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel2.setText("Flight Id:");
+        jLabel2.setText("ID de vuelo:");
 
         jLabel3.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel3.setText("Flight Name:");
+        jLabel3.setText("Nombre de vuelo");
 
         jLabel4.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel4.setText("Source:");
+        jLabel4.setText("Salida:");
 
         jLabel5.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel5.setText("Destination:");
+        jLabel5.setText("Destino:");
 
         source.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -110,23 +110,23 @@ public class Add_Flight_Details extends javax.swing.JFrame {
         });
 
         jLabel6.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel6.setText("Date:");
+        jLabel6.setText("Fecha:");
 
         jLabel7.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel7.setText("Arrival Time:");
+        jLabel7.setText("Hora de llegada:");
 
         jLabel8.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel8.setText("Departure Time:");
+        jLabel8.setText("Hora de partida:");
 
         jLabel9.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel9.setText("Flight price:");
+        jLabel9.setText("Precio de vuelo:");
 
         jtable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
             },
             new String [] {
-                "Flight Id", "Flight Name", "Source", "Destination", "Date", "Arrival Time", "Departure Time", "Flight Price"
+                "ID de vuelo", "Nombre de vuelo", "Salida", "Destino", "Fecha", "Hora de despegue", "Hora de aterrizaje", "Precio de vuelo"
             }
         ));
         jScrollPane1.setViewportView(jtable);
@@ -134,16 +134,16 @@ public class Add_Flight_Details extends javax.swing.JFrame {
         jPanel1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
-        jLabel1.setText("Add Flight Details");
+        jLabel1.setText("Agregar detalles de vuelo");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 221, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(18, 18, 18)
+                .addComponent(jLabel1)
+                .addContainerGap(26, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -153,7 +153,7 @@ public class Add_Flight_Details extends javax.swing.JFrame {
         jPanel2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
 
         Add_Flight.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        Add_Flight.setText("Add");
+        Add_Flight.setText("Agregar");
         Add_Flight.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 Add_FlightActionPerformed(evt);
@@ -161,7 +161,7 @@ public class Add_Flight_Details extends javax.swing.JFrame {
         });
 
         Delete.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        Delete.setText("Delete");
+        Delete.setText("Borrar");
         Delete.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 DeleteActionPerformed(evt);
@@ -169,7 +169,7 @@ public class Add_Flight_Details extends javax.swing.JFrame {
         });
 
         Update.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        Update.setText("Update");
+        Update.setText("Actualizar");
         Update.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 UpdateActionPerformed(evt);
@@ -177,7 +177,7 @@ public class Add_Flight_Details extends javax.swing.JFrame {
         });
 
         Search.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        Search.setText("Search");
+        Search.setText("Buscar");
         Search.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 SearchActionPerformed(evt);
@@ -193,7 +193,7 @@ public class Add_Flight_Details extends javax.swing.JFrame {
         });
 
         Exit.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        Exit.setText("Exit");
+        Exit.setText("Salir");
         Exit.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 ExitActionPerformed(evt);
@@ -265,7 +265,7 @@ public class Add_Flight_Details extends javax.swing.JFrame {
                             .addComponent(fprice, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(31, 31, 31)
                         .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 670, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap(27, Short.MAX_VALUE))
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addGap(0, 0, Short.MAX_VALUE)
                         .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -505,20 +505,21 @@ public class Add_Flight_Details extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Add_Flight_Details.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Agregar_detalle_vuelo.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Add_Flight_Details.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Agregar_detalle_vuelo.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Add_Flight_Details.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Agregar_detalle_vuelo.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Add_Flight_Details.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Agregar_detalle_vuelo.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Add_Flight_Details().setVisible(true);
+                new Agregar_detalle_vuelo().setVisible(true);
             }
         });
     }
