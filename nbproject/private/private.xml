@@ -5,14 +5,15 @@
         <group>
             <file>file:/C:/Users/Piero/Documents/NetBeansProjects/SistemaAeropuerto/src/Home.java</file>
             <file>file:/C:/Users/Piero/Documents/NetBeansProjects/SistemaAeropuerto/src/Registro.java</file>
-            <file>file:/C:/Users/Piero/Documents/NetBeansProjects/SistemaAeropuerto/src/Book_Ticket.java</file>
             <file>file:/C:/Users/Piero/Documents/NetBeansProjects/SistemaAeropuerto/src/Debit_Card.java</file>
+            <file>file:/C:/Users/Piero/Documents/NetBeansProjects/SistemaAeropuerto/src/Reserva_Ticket.java</file>
             <file>file:/C:/Users/Piero/Documents/NetBeansProjects/SistemaAeropuerto/src/Cancelar_Pasaje.java</file>
             <file>file:/C:/Users/Piero/Documents/NetBeansProjects/SistemaAeropuerto/src/Credito.java</file>
             <file>file:/C:/Users/Piero/Documents/NetBeansProjects/SistemaAeropuerto/src/Olvido_Contraseña.java</file>
             <file>file:/C:/Users/Piero/Documents/NetBeansProjects/SistemaAeropuerto/src/Login.java</file>
             <file>file:/C:/Users/Piero/Documents/NetBeansProjects/SistemaAeropuerto/src/Buscar_Detalles_Vuelo.java</file>
             <file>file:/C:/Users/Piero/Documents/NetBeansProjects/SistemaAeropuerto/src/Metodo_Pago.java</file>
+            <file>file:/C:/Users/Piero/Documents/NetBeansProjects/SistemaAeropuerto/src/javaconnect.java</file>
             <file>file:/C:/Users/Piero/Documents/NetBeansProjects/SistemaAeropuerto/src/Agregar_Detalle_Vuelo.java</file>
         </group>
     </open-files>
