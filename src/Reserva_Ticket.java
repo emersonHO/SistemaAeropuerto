@@ -1,7 +1,7 @@
 
-public class Book_Ticket extends javax.swing.JFrame {
+public class Reserva_Ticket extends javax.swing.JFrame {
 
-    public Book_Ticket() {
+    public Reserva_Ticket() {
         initComponents();
     }
 
@@ -15,7 +15,7 @@ public class Book_Ticket extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jLabel5.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel5.setText("Flight Id:");
+        jLabel5.setText("ID de vuelo:");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -49,7 +49,7 @@ public class Book_Ticket extends javax.swing.JFrame {
   
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Book_Ticket().setVisible(true);
+                new Reserva_Ticket().setVisible(true);
             }
         });
     }
